@@ -39,7 +39,7 @@ auth_grp = environ.get('AUTH_GROUP')
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002655119999') 
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002517228726') 
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002230061706') 
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://alammohit143:jd5jK9bI8wHxx9nl@cluster0.fgroqko.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
@@ -51,10 +51,10 @@ MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "False"), False) # Type T
 DATABASE_URI2 = environ.get('DATABASE_URI2', "")
 DB_CHANGE_LIMIT = int(environ.get('DB_CHANGE_LIMIT', "432")) 
 
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/movie_group_bot_0')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/moviehub4u_update')
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/disscus_moviehub4u')
-UPDATE_CHANNEL_LNK = environ.get('UPDATE_CHANNEL_LNK', 'https://t.me/moviehub4u_update')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Mohit1294')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Decodingtm4mohit')
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/hinkidi')
+UPDATE_CHANNEL_LNK = environ.get('UPDATE_CHANNEL_LNK', 'https://t.me/Decodingtm4mohit')
 
 AUTH_CHANNEL = environ.get("AUTH_CHANNEL", "-1002282783745 -1002393557941 -1002594005991") # add multiple channels here, separated by single space
 AUTH_REQ_CHANNEL = environ.get('AUTH_REQ_CHANNEL', '-1002377815135') # add multiple channels here, separated by single space
