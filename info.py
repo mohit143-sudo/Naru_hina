@@ -22,17 +22,17 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://graph.org/file/633cee565239e09ebfad6-caa583ca6633cbb913.jpg https://graph.org/file/53d5a195a4d314724ea9a-13cfc6ecb62ad142c0.jpg https://graph.org/file/6bf77aa8a7cb1763ccae2-650f8dcac7bc91fa53.jpg https://graph.org/file/de747b2ddc86c33f7ee03-416796a9dcd504aa20.jpg https://graph.org/file/3d8d477be51040c53854c-1f5e85f06e8fbe6e85.jpg https://graph.org/file/03d81c6f7829168f06898-88b857c5439bc28d44.jpg')).split() 
+PICS = (environ.get('PICS', 'https://graph.org/file/240494e90c2d513135c5c-36bc6f92d3f12aec47.jpg')).split() 
 NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/633cee565239e09ebfad6-caa583ca6633cbb913.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/6bf77aa8a7cb1763ccae2-650f8dcac7bc91fa53.jpg")
 SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/1071053c0fef3b99f875a-7e98684fe2015e1dc4.jpg")
-SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://telegra.ph/file/f983d857f3ce40795e4b8.jpg'))
+SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/bcea6c442e7f03cd7de96-631fdd5d4a1387a3fb.jpg'))
 FSUB_IMG = (environ.get('FSUB_IMG', 'https://graph.org/file/95cefa3272feec077b28a-78591fe27d4215c260.jpg')).split() 
 
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6964203412').split()] 
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6964203412 5436840657').split()] 
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002153653982 -1002701318235 -1002623667730').split()]
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002583655280'))  
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002635477308'))  
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1003043427598'))  
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002575448723'))  
 MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1003081942933'))  
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002596920866')) 
 auth_grp = environ.get('AUTH_GROUP')
@@ -42,7 +42,7 @@ REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_
 support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002517228726') 
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://hinata:hinata@cluster0.apfoz26.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://alammohit143:jd5jK9bI8wHxx9nl@cluster0.fgroqko.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'SilentXBotz_files')
 
